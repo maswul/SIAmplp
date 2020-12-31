@@ -3,6 +3,8 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use \Illuminate\Http\Request;
+use Exception;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -37,4 +39,5 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
 }

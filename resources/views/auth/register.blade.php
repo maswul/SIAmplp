@@ -356,10 +356,16 @@ SVG Icons - svgicons.sparkk.fr
             <?xml version="1.0" encoding="UTF-8"?>
 
     </div>
-    <form action="{{ route('login') }}" method="post" class="log-in" autocomplete="off">
+    <form action="{{ route('register') }}" method="post" class="log-in" autocomplete="off">
+        @csrf
       <h4>SPPD <span>online</span></h4>
       <p>Selamat datang! Silahkan isi form dibawah untuk mendaftarkan user anda:</p>
-      <p style="color:red; font-weight:bold; display:none;">Maaf, Username / Password anda salah!</p>
+      @if($errors->any())
+
+        {!! implode('', $errors->all('<p style="color:red; font-weight:bold;">:message</p>')) !!}
+
+      @endif
+
       <!-- NIP -->
       <div class="floating-label">
         <input placeholder="Nomor Induk Pegawai" type="text"  name="nip" id="nip" autocomplete="off">
@@ -372,7 +378,7 @@ SVG Icons - svgicons.sparkk.fr
       </div>
       <!-- Nama Pegawai -->
       <div class="floating-label">
-        <input placeholder="Nama Pegawai" type="text"  name="name" id="name" autocomplete="off">
+        <input placeholder="Nama Pegawai, ST" type="text"  name="name" id="name" autocomplete="off">
         <label for="name">Nama Pegawai:</label>
         <div class="icon">
             <svg class="svg-icon" viewBox="0 0 20 20">
@@ -412,7 +418,7 @@ SVG Icons - svgicons.sparkk.fr
       </div>
        <!-- password again -->
        <div class="floating-label">
-        <input placeholder="Password" type="password" name="password"  id="password" autocomplete="off">
+        <input placeholder="Password" type="password" name="password_confirmation"  id="password-confirm" autocomplete="off">
         <label for="password">Password:</label>
         <div class="icon">
 
@@ -430,7 +436,7 @@ SVG Icons - svgicons.sparkk.fr
         </div>
 
       </div>
-      <button type="submit" onClick="return false;">Register</button>
+      <button type="submit" >Register</button>
     </form>
   </div>
 </body>

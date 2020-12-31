@@ -127,7 +127,7 @@ return [
     'classes_content_header' => '',
     'classes_content' => '',
     'classes_sidebar' => 'sidebar-dark-primary elevation-4',
-    'classes_sidebar_nav' => '',
+    'classes_sidebar_nav' => 'nav-flat',
     'classes_topnav' => 'navbar-white navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
@@ -233,86 +233,84 @@ return [
     'menu' => [
         [
             'text' => 'search',
-            'search' => true,
-            'topnav' => true,
+            'search' => false,
+            'topnav' => false,
         ],
         [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
+        ['header' => 'Menu Utama'],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
+            'text'        => 'Dashboard',
+            'url'         => '/home',
             'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text' => 'Master Data',
+            'url' => '#',
+            'icon' => 'fa fa-fw fa-cogs',
+            'can' => 'isAdmin',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Pegawai',
+                    'url'  => 'admin/pegawai',
+                    'icon' => 'fas fa-fw fa-user',
+                    'can'  => 'isAdmin',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text' => 'Anggaran',
+                    'url'  => 'admin/anggaran',
+                    'icon' => 'fas fa-fw fa-wallet',
+                    'can'  => 'isAdmin',
                 ],
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Standar Harga',
+                    'url'  => 'admin/harga',
+                    'icon' => 'fas fa-fw fa-coins',
+                    'can'  => 'isAdmin',
                 ],
-            ],
+                [
+                    'text' => 'Pejabat Berwenang',
+                    'url'  => 'admin/pejabat',
+                    'icon' => 'fas fa-fw fa-users-cog',
+                    'can'  => 'isAdmin',
+                ],
+            ]
         ],
-        ['header' => 'labels'],
+
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text' => 'Perjalanan Dinas',
+            'key' => 'perjadin',
+            'url' => '#',
+            'icon' => 'fa fa-fw fa-subway',
+            'label' => '0',
+            'label_color' => 'danger',
+            'submenu' => []
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+            'text' => 'Laporan',
+            'key' => 'laporan',
+            'url' => '#',
+            'icon' => 'fa fa-fw fa-table',
+            'submenu' => [
+                [
+                    'text' => 'Lap. Harian',
+                    'url'  => 'laporan/harian',
+                    'icon' => 'fas fa-fw fa-calendar-day',
+                    'can'  => 'isAdmin',
+                ],
+                [
+                    'text' => 'Lap. Bulanan',
+                    'url'  => 'laporan/bulanan',
+                    'icon' => 'fas fa-fw fa-calendar-week',
+                ],
+            ]
+        ]
+
+
     ],
 
     /*

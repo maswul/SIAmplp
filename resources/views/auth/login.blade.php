@@ -337,9 +337,14 @@
 
     </div>
     <form action="{{ route('login') }}" method="post" class="log-in" autocomplete="off">
+        @csrf
       <h4>SPPD <span>online</span></h4>
       <p>Selamat datang! Silahkan masuk ke akun anda untuk membuat SPT dan SPPD:</p>
-      <p style="color:red; font-weight:bold; display:none;">Maaf, Username / Password anda salah!</p>
+      @if ($errors->any())
+
+      {!!  implode('', $errors->all('<p style="color:red; font-weight:bold;">:message</p>')) !!}
+
+    @endif
       <div class="floating-label">
         <input placeholder="Nomor Induk Pegawai" type="text"  name="nip" id="nip" autocomplete="off">
         <label for="nip">Nomor Induk Pegawai:</label>
@@ -368,7 +373,7 @@
         </div>
 
       </div>
-      <button type="submit" onClick="return false;">Log in</button>
+      <button type="submit" >Log in</button>
       <a href="{{ route('register') }}" class="discrete">Register</a>
     </form>
   </div>
