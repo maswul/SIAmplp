@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+route::middleware('auth')->get('/admin/pegawai', function(){
+    return view('sppd.admin.pegawai');
+});
