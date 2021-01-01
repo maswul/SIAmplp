@@ -2,7 +2,7 @@
     <div class="cariAset">
         <form>
         <div class="form-group"><label for="cari">Ketik Untuk Meminjam Aset Kantor:</label>
-            <input class="form-control" type="text" v-model="cari" @input="onChange" id="cari">
+            <input class="form-control" type="text" v-model="cari" @input="onChange" id="cari" autocomplete="off">
 
             <ul class="autocomplete-results" v-show="isOpen" >
                 <li
@@ -17,7 +17,7 @@
         </div>
             <div class="form-row">
                 <div class="col-md-6"><label for="hire-date">Rencana Pengembalian</label>
-                    <input class="form-control autocomplete" id="hire-date" type="date">
+                    <input class="form-control" id="hire-date" type="date">
                 </div>
 
                 <div class="col-md-6 button"><button class="btn btn-primary btn-block" type="submit">Kirim</button></div>
@@ -57,6 +57,10 @@
     export default {
         mounted() {
             console.log('Component CariAset mounted.')
+        },
+        created() {
+            this.items = ['Kamera', 'Pensil', 'Laptop'];
+            //fungsi Inisiasi data akan disini.
         },
         name: 'cariAset',
         data () {

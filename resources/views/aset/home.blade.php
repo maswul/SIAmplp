@@ -5,8 +5,9 @@
         <div class="container">
             <div class="heading">
                 <h2>Pinjam Aset Kantor</h2>
+                <h3>Selamat datang, {{ Auth::user()->name }}</h3>
             </div>
-            <cari-aset :items="[ 'Kamera', 'Laptop', 'GPS', 'Drone', 'Pear', 'Peach', 'Grape', 'Tangerine', 'Pineapple']"></cari-aset>
+            <cari-aset></cari-aset>
         </div>
     </section>
 @stop

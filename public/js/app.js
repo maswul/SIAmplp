@@ -2042,6 +2042,9 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     console.log('Component CariAset mounted.');
   },
+  created: function created() {
+    this.items = ['Kamera', 'Pensil', 'Laptop'];
+  },
   name: 'cariAset',
   data: function data() {
     return {
@@ -45131,7 +45134,7 @@ var render = function() {
             }
           ],
           staticClass: "form-control",
-          attrs: { type: "text", id: "cari" },
+          attrs: { type: "text", id: "cari", autocomplete: "off" },
           domProps: { value: _vm.cari },
           on: {
             input: [
@@ -45194,7 +45197,7 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("input", {
-          staticClass: "form-control autocomplete",
+          staticClass: "form-control",
           attrs: { id: "hire-date", type: "date" }
         })
       ]),

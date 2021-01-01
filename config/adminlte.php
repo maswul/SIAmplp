@@ -236,20 +236,17 @@ return [
             'search' => false,
             'topnav' => false,
         ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
         ['header' => 'Menu Utama'],
         [
             'text'        => 'Dashboard',
             'url'         => '/home',
             'icon'        => 'far fa-fw fa-file',
+            'key'         => 'home',
 
         ],
         [
             'text' => 'Master Data',
+            'key' => 'masterdata',
             'url' => '#',
             'icon' => 'fa fa-fw fa-cogs',
             'can' => 'isAdmin',
@@ -308,7 +305,27 @@ return [
                     'icon' => 'fas fa-fw fa-calendar-week',
                 ],
             ]
+        ],
+        ['header' => 'Link Aplikasi', 'key' => 'link'],
+        [
+            'text' => 'e-SPPD',
+            'key' => 'esppd',
+            'route' => 'home',
+            'icon' => 'fa fa-fw fa-subway'
+        ],
+        [
+            'text' => 'e-Bansos',
+            'key' => 'ebansos',
+            'route' => 'home',
+            'icon' => 'fa fa-fw fa-handshake'
+        ],
+        [
+            'text' => 'e-Aset',
+            'key' => 'easet',
+            'route' => 'easet',
+            'icon' => 'fa fa-fw fa-house-damage'
         ]
+
 
 
     ],

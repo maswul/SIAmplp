@@ -37,6 +37,14 @@ class AppServiceProvider extends ServiceProvider
             return $user->role == 3;
         });
 
+        Gate::define('isBoleh', function($user){
+            if ($user->role ==1 || $user->role == 2)
+            {
+                return true;
+            }
+            return false;
+        });
+
 
 
 

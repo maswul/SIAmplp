@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AsetManager;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,9 +40,5 @@ Route::get('/e-aset/pinjam', function() {
     return view ("aset.pinjam");
 })->name('easet.pinjam');
 
-Route::middleware('auth')->get('/e-aset/manager', function() {
-    if (\Illuminate\Support\Facades\Auth::user()->role<3)
-    {
-        return "Selamat datang di e-aset manager pages!";
-    }
-})->name('easet.admin');
+Route::middleware('auth')->get('/e-aset/manager', [\App\Http\Controllers\AsetManager::class, 'admin'])->name('easet.admin');
+Route::middleware('auth')->get('/e-aset/manager/cetak', [\App\Http\Controllers\AsetManager::class, 'admin'])->name('easet.cetak');

@@ -12,11 +12,16 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">eAset</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="{{ route('easet') }}">eAset</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" href="{{ route('easet.admin') }}">eAset Manager</a></li>
+                    @can('isBoleh')
+                        <li class="nav-item"><a class="nav-link active" href="{{ route('easet.admin') }}">eAset Manager</a></li>
+                    @endcan
+                    @can('isPns')
+                    <li class="nav-item"><a class="nav-link active" href="{{ route('easet') }}">List Aset Dipinjam</a></li>
+                    @endcan
                 </ul>
             </div>
         </div>
