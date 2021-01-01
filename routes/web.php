@@ -28,3 +28,20 @@ route::middleware('auth')->get('/admin/pegawai', function(){
     }
     return redirect()->route('home');
 });
+
+
+//untuk eAset
+Route::get('/e-aset', function(){
+    return view("aset.home");
+})->name('easet');
+
+Route::get('/e-aset/pinjam', function() {
+    return view ("aset.pinjam");
+})->name('easet.pinjam');
+
+Route::middleware('auth')->get('/e-aset/manager', function() {
+    if (\Illuminate\Support\Facades\Auth::user()->role<3)
+    {
+        return "Selamat datang di e-aset manager pages!";
+    }
+})->name('easet.admin');
