@@ -21,7 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 import pegawai from './components/Pegawai.vue';
-Vue.use(pegawai);
+import cariAset from "./components/cariAset/cariAset";
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -30,6 +30,6 @@ Vue.use(pegawai);
 
 const app = new Vue({
     el: '#app',
-    components: { pegawai }
+    components: { pegawai, cariAset }
 
 });

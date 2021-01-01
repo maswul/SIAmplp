@@ -29,7 +29,7 @@
             <div class="links"><a href="{{ route('easet') }} ">eAset</a><a href="{{ route('home') }}">eSPPD</a><a href="/e-bansos">eBansos</a></div>
         </div>
     </footer>
-    <script src="{{ asset('easet/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('easet/bootstrap.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="{{ asset('easet/theme.js') }}"></script>

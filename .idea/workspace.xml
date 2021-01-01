@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80036c6-e954-4377-945a-d1ba5f90e517" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/components/cariAset/cariAset.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Pegawai.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Pegawai.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sppd/admin/pegawai.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sppd/admin/pegawai.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aset/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aset/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aset/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aset/master.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -180,10 +179,24 @@
       <option name="presentableId" value="Default" />
       <updated>1609434915302</updated>
       <workItem from="1609434917110" duration="1956000" />
+      <workItem from="1609473096829" duration="5000" />
+      <workItem from="1609473131840" duration="25000" />
+      <workItem from="1609473290267" duration="1929000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
