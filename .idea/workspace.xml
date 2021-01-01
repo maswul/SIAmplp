@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80036c6-e954-4377-945a-d1ba5f90e517" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/cariAset/cariAset.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/aset/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aset/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/aset/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aset/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +177,7 @@
       <workItem from="1609434917110" duration="1956000" />
       <workItem from="1609473096829" duration="5000" />
       <workItem from="1609473131840" duration="25000" />
-      <workItem from="1609473290267" duration="1929000" />
+      <workItem from="1609473290267" duration="2111000" />
     </task>
     <servers />
   </component>

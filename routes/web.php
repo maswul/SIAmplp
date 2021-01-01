@@ -31,7 +31,7 @@ route::middleware('auth')->get('/admin/pegawai', function(){
 
 
 //untuk eAset
-Route::get('/e-aset', function(){
+Route::middleware('auth')->get('/e-aset', function(){
     return view("aset.home");
 })->name('easet');
 
