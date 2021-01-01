@@ -26,6 +26,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.1",
         "icheck-bootstrap": "^3.0.1",
-        "overlayscrollbars": "^1.13.1"
+        "overlayscrollbars": "^1.13.1",
+        "vue-progressbar": "^0.7.5"
     }
 }

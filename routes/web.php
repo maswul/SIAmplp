@@ -22,5 +22,9 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 route::middleware('auth')->get('/admin/pegawai', function(){
-    return view('sppd.admin.pegawai');
+    if (\Illuminate\Support\Facades\Auth::user()->role<3)
+    {
+        return view('sppd.admin.pegawai');
+    }
+    return redirect()->route('home');
 });
